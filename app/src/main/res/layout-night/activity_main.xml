@@ -6,33 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical" >
 
 
+
+
         <Button
             android:id="@+id/countb"
-            android:layout_width="409dp"
-            android:layout_height="86dp"
+            android:layout_width="174dp"
+            android:layout_height="88dp"
             android:layout_alignParentBottom="true"
             android:layout_gravity="center"
+            android:layout_marginBottom="451dp"
             android:text="@string/count" />
 
         <TextView
             android:id="@+id/result"
-            android:layout_width="match_parent"
-            android:layout_height="547dp"
+            android:layout_width="102dp"
+            android:layout_height="343dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginEnd="135dp"
             android:background="#666f70"
-            android:layout_marginEnd="0dp"
             android:gravity="center"
             android:text="@string/res"
-            android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="100sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,11 +43,12 @@
 
         <Button
             android:id="@+id/toastb"
-            android:layout_width="409dp"
-            android:layout_height="101dp"
+            android:layout_width="175dp"
+            android:layout_height="91dp"
             android:layout_alignParentBottom="true"
             android:layout_gravity="center"
+            android:layout_marginBottom="594dp"
             android:text="@string/toast" />
 
-    </LinearLayout>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
